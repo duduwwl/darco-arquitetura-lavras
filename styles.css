@@ -149,6 +149,7 @@ img { display: block; max-width: 100%; }
 .gallery-stage { display: flex; align-items: center; justify-content: center; min-height: 0; }
 .gallery-frame { display: flex; align-items: center; justify-content: center; width: min(100%, 1420px); height: 100%; background: #20211f; }
 .gallery-frame img { width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; transform: none; }
+.gallery-frame img[src$="gastronomia-03.jpg"] { width: min(100%, 1059px); aspect-ratio: 1059 / 620; object-fit: cover; object-position: center top; }
 .gallery-controls { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding-top: 1rem; }
 .gallery-controls span { color: #b6b5ad; font-size: .82rem; }
 .gallery-controls div { display: flex; gap: 2rem; }
