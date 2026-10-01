@@ -45,14 +45,14 @@ img { display: block; max-width: 100%; }
 .image-window { overflow: hidden; }
 .image-window img { width: 100%; height: 100%; object-fit: cover; }
 .hero-image img { object-position: center 51%; }
-.hero-foliage { position: absolute; inset: 0; pointer-events: none; will-change: transform; }
-.foliage-left { transform-origin: 10% 43%; animation: foliage-left-sway 7.4s ease-in-out infinite alternate; }
-.foliage-right { transform-origin: 89% 47%; animation: foliage-right-sway 8.6s ease-in-out infinite alternate; }
-.foliage-palm { transform-origin: 76% 76%; animation: foliage-palm-sway 5.8s ease-in-out infinite alternate; }
+.hero-foliage { position: absolute; inset: 0; pointer-events: none; opacity: .72; will-change: transform; }
+.foliage-left { transform-origin: 10% 43%; animation: foliage-left-sway 8.8s ease-in-out infinite alternate; }
+.foliage-right { transform-origin: 89% 47%; animation: foliage-right-sway 10.2s ease-in-out infinite alternate; }
+.foliage-palm { transform-origin: 76% 76%; animation: foliage-palm-sway 7.4s ease-in-out infinite alternate; }
 .hero-shade { background: linear-gradient(90deg, rgba(15,18,19,.85) 0%, rgba(15,18,19,.56) 34%, rgba(15,18,19,.2) 67%, rgba(15,18,19,.04) 100%), linear-gradient(0deg, rgba(9,12,13,.55) 0%, transparent 36%); }
-@keyframes foliage-left-sway { from { transform: translate3d(-.28%, 0, 0) rotate(-.09deg); } to { transform: translate3d(.3%, .08%, 0) rotate(.12deg); } }
-@keyframes foliage-right-sway { from { transform: translate3d(.24%, -.07%, 0) rotate(.1deg); } to { transform: translate3d(-.26%, .06%, 0) rotate(-.12deg); } }
-@keyframes foliage-palm-sway { from { transform: translate3d(-.36%, .06%, 0) rotate(-.16deg); } to { transform: translate3d(.38%, -.08%, 0) rotate(.15deg); } }
+@keyframes foliage-left-sway { from { transform: translate3d(-.1%, 0, 0) rotate(-.035deg); } to { transform: translate3d(.12%, .03%, 0) rotate(.045deg); } }
+@keyframes foliage-right-sway { from { transform: translate3d(.09%, -.025%, 0) rotate(.035deg); } to { transform: translate3d(-.11%, .025%, 0) rotate(-.045deg); } }
+@keyframes foliage-palm-sway { from { transform: translate3d(-.14%, .025%, 0) rotate(-.055deg); } to { transform: translate3d(.15%, -.03%, 0) rotate(.06deg); } }
 .hero-content { position: absolute; inset: auto 0 clamp(3rem, 6.5vw, 6rem); }
 .hero-kicker { display: flex; align-items: center; gap: 1.2rem; margin: 0 0 2rem; font-size: .84rem; font-weight: 500; letter-spacing: .015em; }
 .kicker-rule { display: inline-block; width: 2.4rem; height: 1px; background: rgba(255,255,255,.7); }
