@@ -13,7 +13,7 @@
 }
 
 * { box-sizing: border-box; }
-body { margin: 0; min-width: 320px; }
+body { margin: 0; min-width: 320px; overflow-x: hidden; }
 body.gallery-open { overflow: hidden; }
 button, a { -webkit-tap-highlight-color: transparent; }
 button { font: inherit; }
@@ -154,7 +154,7 @@ img { display: block; max-width: 100%; }
 .gallery-controls span { color: #b6b5ad; font-size: .82rem; }
 .gallery-controls div { display: flex; gap: 2rem; }
 
-@media (max-width: 1000px) {
+@media (max-width: 860px) {\n  .intro-grid, .practice-grid, .contact-grid { grid-template-columns: 1fr; gap: 2.8rem; }\n  .team-photo { width: min(100%, 430px); }\n  .project, .project-commercial { grid-template-columns: 1fr; gap: 1.8rem; }\n  .project-commercial .project-photo-wrap { order: -1; }\n  .project-info, .project-commercial .project-info { padding-top: 1rem; }\n  .project-info > p:not(.project-type) { max-width: 620px; }\n  .project-secondary { max-width: 620px; height: clamp(210px, 42vw, 340px); }\n}\n\n@media (max-width: 1000px) {
   .hero-content { bottom: 2rem; }
   .hero h1 { font-size: clamp(3.25rem, 6.4vw, 5.5rem); }
   .hero-foot { margin-top: 1.8rem; }
@@ -201,10 +201,10 @@ img { display: block; max-width: 100%; }
   .practice-row { grid-template-columns: 1fr; gap: .75rem; }
   .contact-details { margin-top: 1.5rem; }
   .contact-cta { margin-top: 2rem; }
-  .site-footer { flex-wrap: wrap; gap: 2rem; }
+  .site-footer { flex-wrap: wrap; gap: 2rem; }\n  .gallery-shell { padding: .85rem; }\n  .gallery-topbar { padding-bottom: .7rem; }\n  .gallery-close, .gallery-controls button { min-height: 44px; padding: .65rem .25rem; }\n  .gallery-controls { padding-top: .7rem; }
 }
 
-@media (max-width: 420px) {
+@media (min-width: 761px) and (max-width: 860px) {\n  .project, .project-commercial { gap: 1.8rem; }\n  .project-secondary { height: clamp(210px, 42vw, 340px); }\n}\n\n@media (max-width: 420px) {
   .hero h1 { font-size: 3.25rem; }
   .hero-kicker { gap: .65rem; }
   .kicker-rule { width: 1.3rem; }
